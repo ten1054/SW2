@@ -1,0 +1,9 @@
+function* dc() {
+    console.log('nih');
+    var s = yield 'next sadasd';
+    console.log(s)
+    console.log('asdas')
+}
+const obj = dc();
+obj.next();
+obj.next('12');//将12返回给s,辉讲next里的值返回给方法里yield1里面的的s
